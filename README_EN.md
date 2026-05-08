@@ -1,3 +1,5 @@
+[中文](README.md) | English
+
 # revision-check
 
 `revision-check` is a review-before-edit workflow for AI coding agents.

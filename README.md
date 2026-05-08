@@ -1,3 +1,5 @@
+中文 | [English](README_EN.md)
+
 # revision-check
 
 `revision-check` 是一个面向 AI coding agents 的“先审查、再批准、后修改”工作流。
