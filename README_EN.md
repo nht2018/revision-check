@@ -14,13 +14,13 @@ The agent first inspects the files, prepares planned edit items, and opens a loc
 
 ## Installation
 
-Usually, you only need to enter this in your agent:
+You need a mainstream coding agent that supports custom skills, rules, or project instructions, such as [Codex](https://chatgpt.com/codex/), [Claude Code](https://code.claude.com/docs/en/quickstart), or [Cursor CLI](https://cursor.com/).
 
 ```text
 Install the skill from https://github.com/nht2018/revision-check.git as revision-check.
 ```
 
-Mainstream coding agents that support custom skills, rules, or project instructions can usually fetch and enable this skill through their own mechanisms, such as Codex, Claude Code, and Cursor CLI.
+The agent usually fetches and enables this skill through its own mechanism.
 
 ## Usage
 
