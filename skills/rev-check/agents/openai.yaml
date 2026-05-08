@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rev Check"
+  short_description: "Review proposed edits in a local approval page before applying them"
+  default_prompt: "$rev-check Polish the introduction and only apply the changes I approve."

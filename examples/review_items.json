@@ -1,0 +1,26 @@
+[
+  {
+    "id": "L1",
+    "locations": ["main.tex:85-90"],
+    "occurrence_count": 1,
+    "issue_type": "段落级润色",
+    "priority": "medium",
+    "current_problem": "相关工作段落层次不够清楚。",
+    "proposed_change": "重写为更清晰的 related-work 段落。",
+    "current_text": "Considerable effort has been devoted to quantum preconditioning. Contributions include structural preconditioners tailored to specific problem classes...",
+    "proposed_text": "A substantial body of work has studied quantum preconditioning. Existing approaches include structural preconditioners tailored to specific problem classes...",
+    "reason": "新句式用 A substantial body of work 统摄文献列表，避免 Contributions include 这种略显突兀的开头；同时把 optimization oriented 等名词前复合修饰语改为 optimization-oriented，更符合学术英语规范。"
+  },
+  {
+    "id": "G1",
+    "locations": ["main.tex:98", "main.tex:156"],
+    "occurrence_count": 2,
+    "issue_type": "术语一致性",
+    "priority": "low",
+    "current_problem": "$n$ qubit",
+    "proposed_change": "$n$-qubit",
+    "current_text": "$n$ qubit Pauli words",
+    "proposed_text": "$n$-qubit Pauli words",
+    "reason": "$n$-qubit 在 Pauli words 前作复合修饰语，使用连字符能减少歧义并保持术语格式一致。"
+  }
+]
