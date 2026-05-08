@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a local HTML approval checklist for LaTeX review items."""
+"""Create a local HTML approval checklist for revision items."""
 
 from __future__ import annotations
 
@@ -829,7 +829,7 @@ function downloadApproval() {{
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "latex-review-approval.json";
+  link.download = "rev-check-approval.json";
   link.click();
   URL.revokeObjectURL(url);
 }}
@@ -847,10 +847,10 @@ document.getElementById("confirm").addEventListener("click", async () => {{
     body: JSON.stringify(payload)
   }});
   if (!response.ok) {{
-    status.textContent = "确认失败，请回到 Codex 重新打开审批页。";
+    status.textContent = "确认失败，请回到 agent 重新打开审批页。";
     return;
   }}
-  status.textContent = `已确认批准 ${{payload.approved_ids.length}} 项，总是忽略 ${{payload.ignored_ids.length}} 项。Codex 将继续处理。`;
+  status.textContent = `已确认批准 ${{payload.approved_ids.length}} 项，总是忽略 ${{payload.ignored_ids.length}} 项。Agent 将继续处理。`;
   if (autoClose) {{
     setTimeout(() => {{
       window.close();
@@ -870,7 +870,7 @@ renderRows();
 def main() -> None:
     parser = argparse.ArgumentParser(description="Create a local HTML approval checklist.")
     parser.add_argument("items_json", type=Path, help="JSON file containing review items.")
-    parser.add_argument("--output", type=Path, default=Path("latex-review-approval.html"))
+    parser.add_argument("--output", type=Path, default=Path("revision-review.html"))
     parser.add_argument("--title", default="Revision Review")
     parser.add_argument("--submit-url", default=None, help="Optional URL that receives approval JSON.")
     parser.add_argument("--auto-close", action="store_true", help="Try to close the browser window after confirmation.")

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serve a local approval page and save confirmed LaTeX review selections."""
+"""Serve a local approval page and save confirmed revision selections."""
 
 from __future__ import annotations
 
@@ -90,7 +90,7 @@ class ApprovalHandler(BaseHTTPRequestHandler):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Serve a local LaTeX review approval page.")
+    parser = argparse.ArgumentParser(description="Serve a local revision approval page.")
     parser.add_argument("items_json", type=Path, help="JSON file containing review items.")
     parser.add_argument("--output-json", type=Path, required=True, help="Where to save confirmed approvals.")
     parser.add_argument("--title", default="Revision Review")
