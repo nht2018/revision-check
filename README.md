@@ -7,7 +7,7 @@
 当你希望 agent 修改论文、LaTeX、代码或文档，但不希望它直接写文件时，在请求前加上：
 
 ```text
-$rev-check 关于修改的prompt
+$revision-check 关于修改的prompt
 ```
 
 agent 会先检查文件、整理计划修改项，并打开一个本地审批页面 `Revision Review`。你可以用鼠标勾选要批准的修改、选择“总是忽略”、调整列宽、查看原文和拟修改之间的差异。只有你批准的项目才会被写入文件。
@@ -27,7 +27,7 @@ Install the skill from https://github.com/nht2018/revision-check.git as revision
 加载 revision-check skill 后，使用方式是：
 
 ```text
-$rev-check 关于修改的prompt
+$revision-check 关于修改的prompt
 ```
 然后浏览器中会自动弹出审批页面，你可以进行审批。
 

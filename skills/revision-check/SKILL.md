@@ -1,11 +1,11 @@
 ---
-name: rev-check
-description: Use this skill when the user prefixes a request with "$rev-check" or explicitly asks to use rev-check. It reviews planned edits first, opens a local Revision Review approval page, and applies only approved changes. Useful for LaTeX papers, theses, academic prose, bibliography cleanup, and other editing tasks where the user wants click-based approval before modification.
+name: revision-check
+description: Use this skill when the user prefixes a request with "$revision-check" or explicitly asks to use revision-check. It reviews planned edits first, opens a local Revision Review approval page, and applies only approved changes. Useful for LaTeX papers, theses, academic prose, bibliography cleanup, and other editing tasks where the user wants click-based approval before modification.
 ---
 
-# Rev Check
+# Revision Check
 
-Use this skill only when the user explicitly prefixes the task with `$rev-check` or asks to use `rev-check`.
+Use this skill only when the user explicitly prefixes the task with `$revision-check` or asks to use `revision-check`.
 Without that trigger, follow the normal agent workflow.
 
 Core rule: inspect first, propose concrete edit items, open the approval page, then modify only approved items.
@@ -34,8 +34,8 @@ Core rule: inspect first, propose concrete edit items, open the approval page, t
 Example:
 
 ```bash
-python3 /path/to/rev-check/scripts/serve_approval.py /tmp/rev-check-items.json \
-  --output-json /tmp/rev-check-approval.json \
+python3 /path/to/revision-check/scripts/serve_approval.py /tmp/revision-check-items.json \
+  --output-json /tmp/revision-check-approval.json \
   --open-browser \
   --exit-on-confirm
 ```

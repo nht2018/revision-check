@@ -7,7 +7,7 @@
 When you want an agent to edit a paper, LaTeX project, codebase, or document, but you do not want it to write files directly, prefix the request with:
 
 ```text
-$rev-check your editing prompt
+$revision-check your editing prompt
 ```
 
 The agent first inspects the files, prepares planned edit items, and opens a local `Revision Review` approval page. You can approve changes with the mouse, mark items as "always ignore", resize columns, and compare the original text with the proposed revision. Only approved items are written to files.
@@ -27,7 +27,7 @@ Mainstream coding agents that support custom skills, rules, or project instructi
 After loading the `revision-check` skill, use:
 
 ```text
-$rev-check your editing prompt
+$revision-check your editing prompt
 ```
 
 Then the approval page will open automatically in the browser, where you can review and approve the proposed changes.

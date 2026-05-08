@@ -829,7 +829,7 @@ function downloadApproval() {{
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "rev-check-approval.json";
+  link.download = "revision-check-approval.json";
   link.click();
   URL.revokeObjectURL(url);
 }}
